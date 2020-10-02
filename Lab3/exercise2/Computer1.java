@@ -51,6 +51,8 @@ public class Computer1 {
         this.type = type;
     }
 
+    //tttttt
+
     public void setSpeed(double speed) {
         if(speed>0)
             this.speed = speed;
