@@ -1,6 +1,10 @@
-package Lab3.exercise2;
+package Lab4.exercise1;
 
-public class Computer1 {
+//Computer.java
+/*An instantiable Computer class based on lab sheet 3 which contains some additional features
+to maximise software reuse*/
+
+public class Computer {
     private String manufacturer;
     private String type;
     private double speed;
@@ -8,19 +12,16 @@ public class Computer1 {
     private double price;
 
 
-    public Computer1() {
-        manufacturer = "Not available";
-        type = "Not available";
-        speed = 0;
-        RAM = 0;
-        price = 0;
+    public Computer() {
+        this("Not available","Not available",0,0,0);
     }
-    public Computer1(String manufacturer,String type,double speed,int RAM,double price) {
-        this.manufacturer = manufacturer;
-        this.type = type;
-        this.speed = speed;
-        this.RAM = RAM;
-        this.price = price;
+
+    public Computer(String manufacturer,String type,double speed,int RAM,double price) {
+        setManufacturer(manufacturer);
+        setType(type);
+        setSpeed(speed);
+        setRAM(RAM);
+        setPrice(price);
     }
 
     public String getManufacturer() {
@@ -44,14 +45,12 @@ public class Computer1 {
     }
 
     public void setManufacturer(String manufacturer) {
-            this.manufacturer = manufacturer;
+        this.manufacturer = manufacturer;
     }
 
     public void setType(String type) {
         this.type = type;
     }
-
-    //tttttt
 
     public void setSpeed(double speed) {
         if(speed>0)
@@ -59,19 +58,17 @@ public class Computer1 {
     }
 
     public void setRAM(int RAM) {
-        RAM = -8;
-        this.RAM = RAM;
+        if(RAM>0)
+            this.RAM = RAM;
     }
 
     public void setPrice(double price) {
-        price=875;
-        this.price = price;
+        if(price>0)
+            this.price = price;
     }
 
     public String toString() {
-        return  "Manufacturer: " + getManufacturer() + "   Type: " + getType() + "   Speed: " + getSpeed()
-                + "   RAM: " + getRAM() + "   Price: " + getPrice();
+        return  "Manufacturer: " + getManufacturer() + "   Type: " + getType() + "   Speed: " + getSpeed() +
+                "   RAM: " + getRAM() + "   Price: " + getPrice();
     }
 }
-
-
