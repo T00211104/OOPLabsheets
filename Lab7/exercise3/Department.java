@@ -21,13 +21,13 @@ public class Department {
         this.name = name;
     }
 
+    public Student[] getStudents() { return students;}
+
     public void setStudents(Student[] students) {
         this.students = students;
     }
 
-    public Student[] getStudents() {
-        return students;
-    }
+
 
     public String toString(){
         String str = "\nName: " + getName() + "\nList of Students: \n\n";

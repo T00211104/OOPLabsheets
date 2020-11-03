@@ -47,7 +47,7 @@ public class Institute {
         Student[] students;
      
         for(int i=0; i< departments.length; i++) {
-        	
+
         	if(departments[i] != null) {
         		students = departments[i].getStudents();
         		

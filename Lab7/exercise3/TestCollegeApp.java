@@ -26,7 +26,7 @@ public class TestCollegeApp {
         departments[0] = creativeMedia;
         departments[1] = computing;
 
-        Institute institute = new Institute("Insitute of Technology, Tralee", departments);
+        Institute institute = new Institute("Institute of Technology, Tralee", departments);
 
         System.out.println(institute);
 
