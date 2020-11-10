@@ -22,8 +22,8 @@ public class TestPerson
         String address = JOptionPane.showInputDialog("Please enter the address of the second person");
         String dateOfBirth = JOptionPane.showInputDialog("Please enter the date of birth of the second person in the form dd-mm-yyyy");
 
-        int day = Integer.parseInt(dateOfBirth.substring(0,2));
-        int month = Integer.parseInt(dateOfBirth.substring(3,5));
+        int day = Integer.parseInt(dateOfBirth.substring(0,2));  //dd-mm-yyyy
+        int month = Integer.parseInt(dateOfBirth.substring(3,5));//12-45-78910
         int year = Integer.parseInt(dateOfBirth.substring(6,10));
 
         GregorianCalendar birthDate = new GregorianCalendar(year,month,day);
