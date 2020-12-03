@@ -1,7 +1,7 @@
 package Lab9.exercise1;
 
 public class TestPolymorphism {
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         Employee[] employees = new Employee[3];//creating an array of Employee objects
 
