@@ -21,7 +21,7 @@ public class RandomNumberFileHandling {
         textArea.setFont(new Font("monospaced", Font.PLAIN,12));
 
         try{
-                FileWriter out = new FileWriter("randomnumbers.txt");
+                FileWriter out = new FileWriter("Lab15/exercise2/randomnumbers.txt");
 
                 for(i=0;i<100;i++) {
                     randomNum = (int)(Math.random()*500+1);

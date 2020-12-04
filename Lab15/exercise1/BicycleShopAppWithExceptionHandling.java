@@ -17,7 +17,7 @@ public class BicycleShopAppWithExceptionHandling extends JFrame implements Actio
 
     private JMenu fileMenu, bikeMenu;
     private JMenuItem item=null;
-    private final File file = new File("lab15/exercise1/bicycles.data");
+    private final File file = new File("Lab15/exercise1/bicycles.data");
 
     public BicycleShopAppWithExceptionHandling() {
         super("Bike Shop System");
@@ -94,7 +94,6 @@ public class BicycleShopAppWithExceptionHandling extends JFrame implements Actio
         else if(e.getActionCommand().equals("Quit")) {
             choice = JOptionPane.showConfirmDialog(null, "Are you sure you wish to quit the application?",
                     "Exiting Application", JOptionPane.YES_NO_CANCEL_OPTION);
-
             if(choice==JOptionPane.YES_OPTION){
                 JOptionPane.showMessageDialog(null,"Saving the file that stores bicycle details before terminating",
                         "Saving File",JOptionPane.INFORMATION_MESSAGE);

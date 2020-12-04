@@ -2,7 +2,7 @@ package Lab15.sampleprogram2;
 
 //SerialisationDemo.java
 /*This program demonstrates the creation of a file and the subsequent writing and reading of it using the ObjectOutputStream and ObjectInputStream classes to perform serialisation and deserialisation*/
-
+/*
 import javax.swing.*;
 import java.io.*;
 import java.util.ArrayList;
@@ -62,4 +62,4 @@ public class SerialisationDemo {
 
         inStream.close();
     }
-}
+}*/
